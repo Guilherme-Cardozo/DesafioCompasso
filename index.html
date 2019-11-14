@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Repositórios Git Hub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shorcut icon" href="img/icon.png">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">Repositórios Git Hub</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container repositoriosGithub-bannerWrapper">
+			<div class="repositoriosGithub-banner">
+				<h1>Repositórios Git Hub</h1>
+				<p>Conecte-se aos respositórios de usuários do mundo inteiro</p>
+				<a class="scroll" href="#busca-Github"><button class="btn btn-primary btn-lg">Pesquisar agora</button></a>
+			</div>
+		</div>
+
+	</header>
+
+	<section id="busca-Github">
+		<div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <div class="well well-sm">
+	                    <form class="form-buscaRepositorios" id="form">
+	                        <div class="form-group">
+								<label for="usuario">Nome do Usuário</label>
+								<div class="input-group">
+									<div class="input-group-addon">@</div>
+									<input class="form-control inputNomeUsuario" id="usuario"  placeholder="Digite o nome do usuário">
+								</div>
+							</div>
+	                        <button type="submit" class="btn btn-default" id="pesquisar-usuario">Pesquisar</button>
+	                        <button type="submit" class="btn btn-default" id="pesquisar-repositorios">Pesquisar repositórios</button>
+	                        <button type="submit" class="btn btn-default" id="pesquisar-repositoriosVisitados">Repositórios visitados</button>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	   	</div>
+	</section>
+
+    <div class="container">
+	    <table id="usuarioGithub" class="espacamento invisivel">
+			<thead>
+				<tr>
+					<th>Nome do Usuário</th>
+					<th>Avatar</th>
+					<th>Followers</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="usuario">
+					<td id="nomeUsuario"></td>
+					<td id ="img-avatar"></td>
+					<td id ="followers-user"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container">
+		<table id="repositoriosGit" class="espacamento invisivel">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Repositório</th>
+				</tr>
+			</thead>
+			<tbody id="tabela-repositoriosGithub">
+				<tr class="repositorios">
+					<td class ="repositorio-id"></td>
+					<td class="repositorio-nome"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container">
+		<table id="estrelasGit" class="espacamento invisivel">
+			<thead>
+				<tr>
+					<th>Usuário</th>
+					<th>Avatar</th>
+					<th>Repositório visitado</th>
+				</tr>
+			</thead>
+			<tbody id="tabela-estrelasGithub">
+				<tr class="estrelas">
+					<td class ="estrela-usuario"></td>
+					<td class="estrela-avatar"></td>
+					<td class="estrela-repositorioVisitado"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<footer>
+		<address>
+			<strong>Repositórios Github</strong><br>
+			R. Cel. Chicuta, 575, Centro<br>
+			Passo Fundo, RS<br>
+			Tel: (54) 3045-7074
+		</address>
+		<address>
+			E-mail: contato@compasso.com.br
+		</address>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://github.com/makeusabrew/bootbox/releases/download/v4.4.0/bootbox.min.js"></script>
+	<script src="js/buscar-repositorios.js"></script>
+	<script src="js/buscar-starred.js"></script>
+	<script src="js/buscar-usuarios.js"></script>
+</body>
+</html>
